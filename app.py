@@ -110,7 +110,7 @@ def tobs():
     return jsonify(tobs_data)
 
 @app.route("/api/v1.0/<start>")
-def startdate(start):
+def start_date(start):
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
@@ -126,7 +126,7 @@ def startdate(start):
     return jsonify(start_data)
 
 @app.route("/api/v1.0/<start>/<end>")
-def total_date(start,end):
+def start_end_date(start,end):
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
